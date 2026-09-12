@@ -17,9 +17,16 @@ test("server-renders Ahmed Bahathiq's portfolio", async () => {
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /أحمد يوسف عمر باحاذق/);
+  assert.match(html, /دربك الدراسي/);
+  assert.match(html, /https:\/\/www\.darbakstudy\.com\//);
+  assert.match(html, /https:\/\/apps\.apple\.com\/app\/id6794216378/);
+  assert.match(html, /آيتوبيا/);
+  assert.match(html, /https:\/\/aitopia\.ahmedbahathiq\.com\//);
+  assert.match(html, /https:\/\/github\.com\/AhmedBahathiq\/aitopia-agent-world/);
   assert.match(html, /لذيذ يا حامض/);
   assert.match(html, /مشاريع منجزة/);
-  assert.match(html, /https:\/\/ahmedbahadik\.github\.io\/cv\//);
+  assert.match(html, /https:\/\/ahmedbahathiq\.github\.io\/cv\//);
+  assert.doesNotMatch(html, /ahmedbahadik/);
   assert.match(html, /مقدمة في الذكاء الاصطناعي/);
   assert.match(html, /HTML وCSS وJavaScript/);
   assert.match(html, /مساري الأكاديمي/);
@@ -34,3 +41,4 @@ test("server-renders Ahmed Bahathiq's portfolio", async () => {
   assert.match(html, /https:\/\/www\.tiktok\.com\/@_41ff_/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/);
 });
+

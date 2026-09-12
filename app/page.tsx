@@ -28,7 +28,7 @@ const content = {
     location: "جدة، السعودية",
     stats: [
       ["AI", "التخصص الجامعي"],
-      ["03", "مشاريع منجزة"],
+      ["04", "مشاريع منجزة"],
       ["02", "شهادات احترافية"],
       ["65", "كلمة في الدقيقة"],
     ],
@@ -42,11 +42,24 @@ const content = {
     skillsLabel: "التقنيات والأدوات",
     sectionTwo: "02 / مشاريع منجزة",
     projectsTitle: "أفكار تحولت إلى منتجات تعمل.",
-    projectsSub: "اضغط على المشروع لفتحه مباشرة أو استعرض الكود على GitHub.",
+    projectsSub: "استعرض كل منتج، وافتح النسخة المباشرة أو التطبيق أو الكود المتاح.",
     liveProject: "مشروع مباشر",
     live: "فتح المشروع",
+    website: "زيارة الموقع",
+    appStore: "App Store",
+    openSourceProject: "مشروع مفتوح المصدر",
     code: "عرض الكود",
     projects: [
+      {
+        tag: "منصة دراسية • ويب وiOS • 2026",
+        title: "دربك الدراسي",
+        desc: "منصة عربية متكاملة لتنظيم الدراسة واليوم: المهام والجداول والمعدل، جلسات التركيز، الملاحظات، الأهداف والإنجازات، بتجربة متزامنة على الويب والجوال.",
+      },
+      {
+        tag: "محاكاة وكلاء مستقلة • 2026",
+        title: "آيتوبيا",
+        desc: "عالم جزيرة حي لوكلاء ذكاء اصطناعي مستقلين يتحدثون ويجمعون الموارد ويبنون العلاقات والمجتمع، بينما يستطيع الجميع متابعة حياتهم وأحداثهم مباشرة.",
+      },
       {
         tag: "متجر عربي • 2026",
         title: "لذيذ يا حامض",
@@ -106,7 +119,7 @@ const content = {
     location: "Jeddah, Saudi Arabia",
     stats: [
       ["AI", "Field of study"],
-      ["03", "Completed projects"],
+      ["04", "Completed projects"],
       ["02", "Professional certificates"],
       ["65", "Words per minute"],
     ],
@@ -120,11 +133,24 @@ const content = {
     skillsLabel: "Stack & tools",
     sectionTwo: "02 / Completed projects",
     projectsTitle: "Ideas turned into working products.",
-    projectsSub: "Open a live project directly or explore its source on GitHub.",
+    projectsSub: "Explore each product through its live experience, app, or available source code.",
     liveProject: "Live project",
     live: "Open project",
+    website: "Visit website",
+    appStore: "App Store",
+    openSourceProject: "Open-source project",
     code: "View source",
     projects: [
+      {
+        tag: "Study platform • Web & iOS • 2026",
+        title: "Darbak Study",
+        desc: "An Arabic-first study and daily planning platform for tasks, schedules, GPA tracking, focus sessions, notes, goals, and achievements across web and mobile.",
+      },
+      {
+        tag: "Autonomous agent simulation • 2026",
+        title: "Aitopia",
+        desc: "A persistent island world where autonomous AI agents talk, gather resources, form relationships, and build a society while anyone can follow their lives and events in real time.",
+      },
       {
         tag: "Arabic storefront • 2026",
         title: "Lazeez Yahamid",
@@ -296,7 +322,7 @@ export default function Home() {
             </div>
           </div>
           <div className="floating-chip chip-ai">AI<span>ENGINEER</span></div>
-          <div className="floating-chip chip-projects"><b>03</b><span>PROJECTS</span></div>
+          <div className="floating-chip chip-projects"><b>04</b><span>PROJECTS</span></div>
         </div>
       </section>
 
@@ -347,7 +373,64 @@ export default function Home() {
         </div>
 
         <article className="project-card project-featured reveal">
-          <a className="project-visual visual-lazeez" href="https://ahmedbahadik.github.io/lazeez-yahamid/" target="_blank" rel="noreferrer" aria-label={`${t.live}: ${t.projects[0].title}`}>
+          <a className="project-visual visual-darbak" href="https://www.darbakstudy.com/" target="_blank" rel="noreferrer" aria-label={`${t.website}: ${t.projects[0].title}`}>
+            <div className="browser-bar"><i /><i /><i /><span>darbakstudy.com</span></div>
+            <div className="darbak-mock">
+              <aside className="darbak-side"><b>د</b><span /><span /><span /><span /></aside>
+              <div className="darbak-main">
+                <small>صباح الخير يا أحمد</small>
+                <strong>جاهز ليوم دراسي منتج؟</strong>
+                <div className="darbak-metrics"><span><b>7س 25د</b><small>هذا الأسبوع</small></span><span><b>78%</b><small>إنجاز المهام</small></span><span><b>4.62</b><small>المعدل الحالي</small></span></div>
+                <div className="darbak-tasks"><b>مهام اليوم</b><i /><i /><i /></div>
+              </div>
+            </div>
+            <span className="visual-arrow">↗</span>
+          </a>
+          <div className="project-info">
+            <div className="project-kicker"><span>{t.liveProject}</span><i /></div>
+            <p>{t.projects[0].tag}</p>
+            <h3>{t.projects[0].title}</h3>
+            <p className="project-desc">{t.projects[0].desc}</p>
+            <div className="tech-row"><span>Web</span><span>iOS</span><span>Productivity</span><span>Arabic / English</span></div>
+            <div className="project-actions">
+              <a className="text-link primary-link" href="https://www.darbakstudy.com/" target="_blank" rel="noreferrer">{t.website}<span>↗</span></a>
+              <a className="text-link app-store-link" href="https://apps.apple.com/app/id6794216378" target="_blank" rel="noreferrer">{t.appStore}<span>↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article className="project-card project-reverse reveal">
+          <a className="project-visual visual-aitopia" href="https://aitopia.ahmedbahathiq.com/" target="_blank" rel="noreferrer" aria-label={`${t.live}: ${t.projects[1].title}`}>
+            <div className="browser-bar"><i /><i /><i /><span>aitopia.ahmedbahathiq.com</span></div>
+            <div className="aitopia-mock">
+              <div className="aitopia-water" />
+              <div className="aitopia-island">
+                <span className="island-zone zone-forest">الغابة</span>
+                <span className="island-zone zone-spring">النبع</span>
+                <span className="island-zone zone-camp">المخيم</span>
+                <i className="agent-dot agent-one">س</i>
+                <i className="agent-dot agent-two">ن</i>
+                <i className="agent-dot agent-three">ر</i>
+              </div>
+              <div className="aitopia-feed"><small>سجل الجزيرة</small><span /><span /><span /></div>
+            </div>
+            <span className="visual-arrow">↗</span>
+          </a>
+          <div className="project-info">
+            <div className="project-kicker"><span>{t.openSourceProject}</span><i /></div>
+            <p>{t.projects[1].tag}</p>
+            <h3>{t.projects[1].title}</h3>
+            <p className="project-desc">{t.projects[1].desc}</p>
+            <div className="tech-row"><span>React</span><span>TypeScript</span><span>Cloudflare</span><span>OpenAI</span></div>
+            <div className="project-actions">
+              <a className="text-link primary-link" href="https://aitopia.ahmedbahathiq.com/" target="_blank" rel="noreferrer">{t.live}<span>↗</span></a>
+              <a className="text-link" href="https://github.com/AhmedBahathiq/aitopia-agent-world" target="_blank" rel="noreferrer">{t.code}<span>↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article className="project-card reveal">
+          <a className="project-visual visual-lazeez" href="https://ahmedbahathiq.github.io/lazeez-yahamid/" target="_blank" rel="noreferrer" aria-label={`${t.live}: ${t.projects[2].title}`}>
             <div className="browser-bar"><i /><i /><i /><span>lazeez-yahamid</span></div>
             <div className="storefront-mock">
               <div className="store-nav"><b>لذيذ يا حامض</b><span>السلة ٢</span></div>
@@ -358,19 +441,19 @@ export default function Home() {
           </a>
           <div className="project-info">
             <div className="project-kicker"><span>{t.liveProject}</span><i /></div>
-            <p>{t.projects[0].tag}</p>
-            <h3>{t.projects[0].title}</h3>
-            <p className="project-desc">{t.projects[0].desc}</p>
+            <p>{t.projects[2].tag}</p>
+            <h3>{t.projects[2].title}</h3>
+            <p className="project-desc">{t.projects[2].desc}</p>
             <div className="tech-row"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>WhatsApp</span></div>
             <div className="project-actions">
-              <a className="text-link primary-link" href="https://ahmedbahadik.github.io/lazeez-yahamid/" target="_blank" rel="noreferrer">{t.live}<span>↗</span></a>
-              <a className="text-link" href="https://github.com/ahmedbahadik/lazeez-yahamid" target="_blank" rel="noreferrer">{t.code}<span>↗</span></a>
+              <a className="text-link primary-link" href="https://ahmedbahathiq.github.io/lazeez-yahamid/" target="_blank" rel="noreferrer">{t.live}<span>↗</span></a>
+              <a className="text-link" href="https://github.com/AhmedBahathiq/lazeez-yahamid" target="_blank" rel="noreferrer">{t.code}<span>↗</span></a>
             </div>
           </div>
         </article>
 
         <article className="project-card project-reverse reveal">
-          <a className="project-visual visual-cv" href="https://ahmedbahadik.github.io/cv/" target="_blank" rel="noreferrer" aria-label={`${t.live}: ${t.projects[1].title}`}>
+          <a className="project-visual visual-cv" href="https://ahmedbahathiq.github.io/cv/" target="_blank" rel="noreferrer" aria-label={`${t.live}: ${t.projects[3].title}`}>
             <div className="browser-bar"><i /><i /><i /><span>ahmed / cv</span></div>
             <div className="resume-mock">
               <div className="resume-side"><div className="mock-avatar">AB</div><b>AHMED<br />BAHATHIQ</b><span /><span /><span /></div>
@@ -380,13 +463,13 @@ export default function Home() {
           </a>
           <div className="project-info">
             <div className="project-kicker"><span>{t.liveProject}</span><i /></div>
-            <p>{t.projects[1].tag}</p>
-            <h3>{t.projects[1].title}</h3>
-            <p className="project-desc">{t.projects[1].desc}</p>
+            <p>{t.projects[3].tag}</p>
+            <h3>{t.projects[3].title}</h3>
+            <p className="project-desc">{t.projects[3].desc}</p>
             <div className="tech-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
             <div className="project-actions">
-              <a className="text-link primary-link" href="https://ahmedbahadik.github.io/cv/" target="_blank" rel="noreferrer">{t.live}<span>↗</span></a>
-              <a className="text-link" href="https://github.com/ahmedbahadik/cv" target="_blank" rel="noreferrer">{t.code}<span>↗</span></a>
+              <a className="text-link primary-link" href="https://ahmedbahathiq.github.io/cv/" target="_blank" rel="noreferrer">{t.live}<span>↗</span></a>
+              <a className="text-link" href="https://github.com/AhmedBahathiq/cv" target="_blank" rel="noreferrer">{t.code}<span>↗</span></a>
             </div>
           </div>
         </article>
@@ -440,7 +523,7 @@ export default function Home() {
           </div>
           <div className="social-row">
             <span>{t.follow}</span>
-            <a href="https://github.com/ahmedbahadik" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="https://github.com/AhmedBahathiq" target="_blank" rel="noreferrer">GitHub ↗</a>
             <a href="https://www.linkedin.com/in/ahmed-bahathiq-b2bb31361/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
             <a href="https://www.tiktok.com/@_41ff_" target="_blank" rel="noreferrer">TikTok ↗</a>
           </div>
@@ -455,3 +538,4 @@ export default function Home() {
     </main>
   );
 }
+

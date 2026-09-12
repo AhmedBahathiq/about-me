@@ -191,6 +191,8 @@ button { color: inherit; }
 .project-reverse .project-info { order: 1; }
 .project-visual { min-height: 490px; position: relative; overflow: hidden; border-radius: 21px; transition: transform .35s ease; direction: ltr; }
 .project-visual:hover { transform: translateY(-5px); }
+.visual-darbak { padding: 50px 42px; background: radial-gradient(circle at 18% 12%, rgba(93,229,213,.28), transparent 32%), linear-gradient(145deg, #123f48, #071c26); }
+.visual-aitopia { padding: 50px 42px; background: radial-gradient(circle at 82% 10%, rgba(78,220,168,.28), transparent 34%), linear-gradient(145deg, #123d3b, #071817); }
 .visual-lazeez { padding: 50px 42px; background: radial-gradient(circle at 20% 15%, rgba(255,208,99,.32), transparent 34%), linear-gradient(145deg, #433127, #1b1210); }
 .visual-cv { padding: 50px 42px; background: radial-gradient(circle at 85% 8%, rgba(56,217,255,.26), transparent 34%), linear-gradient(145deg, #15122a, #090a12); }
 .browser-bar { position: relative; z-index: 2; height: 36px; padding: 0 14px; display: flex; align-items: center; gap: 7px; border-radius: 13px 13px 0 0; background: #19161c; color: #6e6876; font-size: 8px; letter-spacing: .12em; }
@@ -198,6 +200,37 @@ button { color: inherit; }
 .browser-bar i:nth-child(2) { background: #ffc45d; }
 .browser-bar i:nth-child(3) { background: #69d589; }
 .browser-bar span { margin-left: 8px; }
+.darbak-mock { min-height: 350px; display: grid; grid-template-columns: 62px 1fr; overflow: hidden; border-radius: 0 0 13px 13px; background: #f4f8f8; color: #16383d; box-shadow: 0 30px 80px rgba(0,0,0,.35); direction: rtl; }
+.darbak-side { padding: 22px 15px; display: flex; flex-direction: column; align-items: center; gap: 18px; background: #0c4a50; }
+.darbak-side b { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 11px; background: #79e0cf; color: #0b3a3f; font-size: 17px; }
+.darbak-side span { width: 27px; height: 5px; border-radius: 8px; background: rgba(255,255,255,.22); }
+.darbak-side span:nth-of-type(2) { background: #79e0cf; }
+.darbak-main { padding: 31px 27px; text-align: right; }
+.darbak-main > small { display: block; color: #709095; font-size: 8px; }
+.darbak-main > strong { display: block; margin-top: 6px; font-size: 19px; }
+.darbak-metrics { margin-top: 27px; display: grid; grid-template-columns: repeat(3,1fr); gap: 9px; }
+.darbak-metrics > span { padding: 13px 11px; display: grid; gap: 6px; border: 1px solid #d9e7e6; border-radius: 12px; background: white; }
+.darbak-metrics b { color: #14636a; font-size: 15px; direction: ltr; }
+.darbak-metrics small { color: #789096; font-size: 7px; }
+.darbak-tasks { margin-top: 15px; padding: 14px; display: grid; gap: 9px; border-radius: 12px; background: white; }
+.darbak-tasks b { font-size: 9px; }
+.darbak-tasks i { width: 100%; height: 7px; border-radius: 7px; background: linear-gradient(90deg,#dfeaea 72%,#7bdccc 72%); }
+.darbak-tasks i:nth-of-type(2) { background: linear-gradient(90deg,#dfeaea 54%,#efbb62 54%); }
+.darbak-tasks i:nth-of-type(3) { background: linear-gradient(90deg,#dfeaea 83%,#70b4e0 83%); }
+.aitopia-mock { min-height: 350px; position: relative; overflow: hidden; border-radius: 0 0 13px 13px; background: #0c3438; box-shadow: 0 30px 80px rgba(0,0,0,.4); }
+.aitopia-water { position: absolute; inset: 0; background: radial-gradient(circle at 28% 24%,rgba(98,224,218,.22),transparent 28%), repeating-radial-gradient(circle at 45% 50%,rgba(255,255,255,.05) 0 2px,transparent 3px 18px), linear-gradient(145deg,#16646b,#0a3339); }
+.aitopia-island { width: 69%; height: 79%; position: absolute; top: 10%; left: 9%; border: 9px solid #d7c38c; border-radius: 49% 43% 46% 54%; background: radial-gradient(circle at 64% 66%,#9fbd5a 0 10%,transparent 11%), radial-gradient(circle at 38% 30%,#214f34 0 17%,transparent 18%), radial-gradient(circle at 63% 26%,#397446 0 13%,transparent 14%), linear-gradient(145deg,#70a654,#305d39); box-shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 0 35px rgba(21,61,34,.35); transform: rotate(-5deg); }
+.island-zone { position: absolute; padding: 5px 8px; border: 1px solid rgba(255,255,255,.18); border-radius: 99px; background: rgba(7,28,25,.72); color: #e7f4e7; font-size: 7px; font-style: normal; transform: rotate(5deg); }
+.zone-forest { top: 24%; left: 16%; }
+.zone-spring { top: 20%; right: 14%; }
+.zone-camp { bottom: 18%; left: 46%; }
+.agent-dot { width: 25px; height: 25px; position: absolute; display: grid; place-items: center; border: 2px solid white; border-radius: 50%; color: white; font-size: 8px; font-style: normal; font-weight: 900; box-shadow: 0 6px 14px rgba(0,0,0,.35); transform: rotate(5deg); }
+.agent-one { left: 30%; bottom: 28%; background: #ec9b2d; }
+.agent-two { right: 25%; top: 40%; background: #dd5762; }
+.agent-three { right: 17%; bottom: 20%; background: #54a87e; }
+.aitopia-feed { width: 25%; position: absolute; top: 9%; right: 4%; bottom: 9%; padding: 13px 10px; display: grid; align-content: start; gap: 13px; border: 1px solid rgba(255,255,255,.11); border-radius: 11px; background: rgba(4,25,27,.78); backdrop-filter: blur(8px); }
+.aitopia-feed small { color: #b8e6d5; font-size: 7px; direction: rtl; }
+.aitopia-feed span { height: 35px; border-radius: 7px; background: linear-gradient(155deg,rgba(255,255,255,.12),rgba(255,255,255,.035)); }
 .storefront-mock { position: relative; z-index: 1; min-height: 350px; padding: 22px; overflow: hidden; border-radius: 0 0 13px 13px; background: #fff9ee; color: #291712; box-shadow: 0 30px 80px rgba(0,0,0,.35); }
 .store-nav { display: flex; justify-content: space-between; font-size: 10px; }
 .store-nav b { color: #8d3121; }
@@ -235,6 +268,7 @@ button { color: inherit; }
 .project-actions { display: flex; gap: 20px; margin-top: 32px; flex-wrap: wrap; }
 .text-link { padding-bottom: 5px; display: inline-flex; align-items: center; gap: 12px; border-bottom: 1px solid rgba(255,255,255,.2); color: #aaa5b4; font-size: 12px; font-weight: 800; }
 .text-link.primary-link { color: white; border-color: var(--cyan); }
+.text-link.app-store-link { color: #d7f8f2; border-color: rgba(121,224,207,.55); }
 
 .journey-grid { margin-top: 70px; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
 .journey-grid .mini-label { margin-top: 0; }
@@ -338,8 +372,14 @@ footer { width: min(calc(100% - 48px), var(--max-width)); margin: 0 auto; paddin
   .skill-group { grid-template-columns: 1fr; gap: 11px; }
   .project-card { padding: 10px; border-radius: 22px; }
   .project-visual { min-height: 355px; }
-  .visual-lazeez, .visual-cv { padding: 32px 18px; }
-  .storefront-mock, .resume-mock { min-height: 270px; }
+  .visual-darbak, .visual-aitopia, .visual-lazeez, .visual-cv { padding: 32px 18px; }
+  .darbak-mock, .aitopia-mock, .storefront-mock, .resume-mock { min-height: 270px; }
+  .darbak-main { padding: 24px 15px; }
+  .darbak-metrics { grid-template-columns: 1fr; gap: 6px; margin-top: 17px; }
+  .darbak-metrics > span { padding: 7px 9px; grid-template-columns: auto 1fr; align-items: center; }
+  .darbak-tasks { display: none; }
+  .aitopia-feed { display: none; }
+  .aitopia-island { width: 82%; left: 9%; }
   .store-hero strong { font-size: 21px; }
   .store-products i { height: 52px; }
   .resume-side { padding: 24px 14px; }
@@ -359,3 +399,4 @@ footer { width: min(calc(100% - 48px), var(--max-width)); margin: 0 auto; paddin
   .reveal { opacity: 1; transform: none; }
   .cursor-glow { display: none; }
 }
+
