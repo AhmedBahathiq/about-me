@@ -47,6 +47,7 @@ const content = {
     live: "فتح المشروع",
     website: "زيارة الموقع",
     appStore: "App Store",
+    googlePlay: "Google Play",
     openSourceProject: "مشروع مفتوح المصدر",
     code: "عرض الكود",
     projects: [
@@ -138,6 +139,7 @@ const content = {
     live: "Open project",
     website: "Visit website",
     appStore: "App Store",
+    googlePlay: "Google Play",
     openSourceProject: "Open-source project",
     code: "View source",
     projects: [
@@ -394,7 +396,8 @@ export default function Home() {
             <div className="tech-row"><span>Web</span><span>iOS</span><span>Productivity</span><span>Arabic / English</span></div>
             <div className="project-actions">
               <a className="text-link primary-link" href="https://www.darbakstudy.com/" target="_blank" rel="noreferrer">{t.website}<span>↗</span></a>
-              <a className="text-link app-store-link" href="https://apps.apple.com/app/id6794216378" target="_blank" rel="noreferrer">{t.appStore}<span>↗</span></a>
+              <a className="text-link app-store-link" href="https://apps.apple.com/kz/app/%D8%AF%D8%B1%D8%A8%D9%83-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D9%8A/id6794216378" target="_blank" rel="noreferrer">{t.appStore}<span>↗</span></a>
+              <a className="text-link play-store-link" href="https://play.google.com/store/apps/details?id=app.darbak.study&amp;hl=ar" target="_blank" rel="noreferrer">{t.googlePlay}<span>↗</span></a>
             </div>
           </div>
         </article>

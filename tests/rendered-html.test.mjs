@@ -19,7 +19,8 @@ test("server-renders Ahmed Bahathiq's portfolio", async () => {
   assert.match(html, /أحمد يوسف عمر باحاذق/);
   assert.match(html, /دربك الدراسي/);
   assert.match(html, /https:\/\/www\.darbakstudy\.com\//);
-  assert.match(html, /https:\/\/apps\.apple\.com\/app\/id6794216378/);
+  assert.match(html, /https:\/\/apps\.apple\.com\/kz\/app\/.*id6794216378/);
+  assert.match(html, /https:\/\/play\.google\.com\/store\/apps\/details\?id=app\.darbak\.study&amp;hl=ar/);
   assert.match(html, /آيتوبيا/);
   assert.match(html, /https:\/\/aitopia\.ahmedbahathiq\.com\//);
   assert.match(html, /https:\/\/github\.com\/AhmedBahathiq\/aitopia-agent-world/);

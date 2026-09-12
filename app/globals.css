@@ -269,6 +269,7 @@ button { color: inherit; }
 .text-link { padding-bottom: 5px; display: inline-flex; align-items: center; gap: 12px; border-bottom: 1px solid rgba(255,255,255,.2); color: #aaa5b4; font-size: 12px; font-weight: 800; }
 .text-link.primary-link { color: white; border-color: var(--cyan); }
 .text-link.app-store-link { color: #d7f8f2; border-color: rgba(121,224,207,.55); }
+.text-link.play-store-link { color: #d9ff8e; border-color: rgba(198,255,94,.48); }
 
 .journey-grid { margin-top: 70px; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
 .journey-grid .mini-label { margin-top: 0; }
