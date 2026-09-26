@@ -28,7 +28,7 @@ const content = {
     location: "جدة، السعودية",
     stats: [
       ["AI", "التخصص الجامعي"],
-      ["04", "مشاريع منجزة"],
+      ["03", "مشاريع منجزة"],
       ["02", "شهادات احترافية"],
       ["65", "كلمة في الدقيقة"],
     ],
@@ -65,11 +65,6 @@ const content = {
         tag: "متجر عربي • 2026",
         title: "لذيذ يا حامض",
         desc: "متجر عربي متجاوب لطلب ورق العنب عبر واتساب، مع خيارات الاستلام والتوصيل، حساب تلقائي، والتحقق من رقم الجوال السعودي.",
-      },
-      {
-        tag: "واجهة شخصية • 2026",
-        title: "السيرة الذاتية",
-        desc: "تجربة ويب شخصية لعرض الملف المهني والسيرة بأسلوب تفاعلي، مبنية باستخدام HTML وCSS وJavaScript.",
       },
     ],
     sectionThree: "03 / التعليم والشهادات",
@@ -120,7 +115,7 @@ const content = {
     location: "Jeddah, Saudi Arabia",
     stats: [
       ["AI", "Field of study"],
-      ["04", "Completed projects"],
+      ["03", "Completed projects"],
       ["02", "Professional certificates"],
       ["65", "Words per minute"],
     ],
@@ -157,11 +152,6 @@ const content = {
         tag: "Arabic storefront • 2026",
         title: "Lazeez Yahamid",
         desc: "A responsive Arabic storefront for ordering grape leaves through WhatsApp, with pickup and delivery options, automatic totals, and Saudi mobile validation.",
-      },
-      {
-        tag: "Personal experience • 2026",
-        title: "Curriculum Vitae",
-        desc: "An interactive personal web experience for presenting a professional profile and resume, built with HTML, CSS, and JavaScript.",
       },
     ],
     sectionThree: "03 / Education & certificates",
@@ -324,7 +314,7 @@ export default function Home() {
             </div>
           </div>
           <div className="floating-chip chip-ai">AI<span>ENGINEER</span></div>
-          <div className="floating-chip chip-projects"><b>04</b><span>PROJECTS</span></div>
+          <div className="floating-chip chip-projects"><b>03</b><span>PROJECTS</span></div>
         </div>
       </section>
 
@@ -455,27 +445,6 @@ export default function Home() {
           </div>
         </article>
 
-        <article className="project-card project-reverse reveal">
-          <a className="project-visual visual-cv" href="https://ahmedbahathiq.github.io/cv/" target="_blank" rel="noreferrer" aria-label={`${t.live}: ${t.projects[3].title}`}>
-            <div className="browser-bar"><i /><i /><i /><span>ahmed / cv</span></div>
-            <div className="resume-mock">
-              <div className="resume-side"><div className="mock-avatar">AB</div><b>AHMED<br />BAHATHIQ</b><span /><span /><span /></div>
-              <div className="resume-main"><small>AI ENGINEER</small><strong>EXPERIENCE</strong><i /><i /><i /><strong>SKILLS</strong><div><span>AI</span><span>WEB</span><span>CODE</span></div></div>
-            </div>
-            <span className="visual-arrow">↗</span>
-          </a>
-          <div className="project-info">
-            <div className="project-kicker"><span>{t.liveProject}</span><i /></div>
-            <p>{t.projects[3].tag}</p>
-            <h3>{t.projects[3].title}</h3>
-            <p className="project-desc">{t.projects[3].desc}</p>
-            <div className="tech-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-            <div className="project-actions">
-              <a className="text-link primary-link" href="https://ahmedbahathiq.github.io/cv/" target="_blank" rel="noreferrer">{t.live}<span>↗</span></a>
-              <a className="text-link" href="https://github.com/AhmedBahathiq/cv" target="_blank" rel="noreferrer">{t.code}<span>↗</span></a>
-            </div>
-          </div>
-        </article>
       </section>
 
       <section className="section journey" id="journey">
