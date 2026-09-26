@@ -57,14 +57,14 @@ const content = {
         desc: "منصة عربية متكاملة لتنظيم الدراسة واليوم: المهام والجداول والمعدل، جلسات التركيز، الملاحظات، الأهداف والإنجازات، بتجربة متزامنة على الويب والجوال.",
       },
       {
-        tag: "محاكاة وكلاء مستقلة • 2026",
-        title: "آيتوبيا",
-        desc: "عالم جزيرة حي لوكلاء ذكاء اصطناعي مستقلين يتحدثون ويجمعون الموارد ويبنون العلاقات والمجتمع، بينما يستطيع الجميع متابعة حياتهم وأحداثهم مباشرة.",
-      },
-      {
         tag: "متجر عربي • 2026",
         title: "لذيذ يا حامض",
         desc: "متجر عربي متجاوب لطلب ورق العنب عبر واتساب، مع خيارات الاستلام والتوصيل، حساب تلقائي، والتحقق من رقم الجوال السعودي.",
+      },
+      {
+        tag: "واجهة شخصية • 2026",
+        title: "السيرة الذاتية",
+        desc: "تجربة ويب شخصية لعرض الملف المهني والسيرة بأسلوب تفاعلي، مبنية باستخدام HTML وCSS وJavaScript.",
       },
     ],
     sectionThree: "03 / التعليم والشهادات",
@@ -144,14 +144,14 @@ const content = {
         desc: "An Arabic-first study and daily planning platform for tasks, schedules, GPA tracking, focus sessions, notes, goals, and achievements across web and mobile.",
       },
       {
-        tag: "Autonomous agent simulation • 2026",
-        title: "Aitopia",
-        desc: "A persistent island world where autonomous AI agents talk, gather resources, form relationships, and build a society while anyone can follow their lives and events in real time.",
-      },
-      {
         tag: "Arabic storefront • 2026",
         title: "Lazeez Yahamid",
         desc: "A responsive Arabic storefront for ordering grape leaves through WhatsApp, with pickup and delivery options, automatic totals, and Saudi mobile validation.",
+      },
+      {
+        tag: "Personal experience • 2026",
+        title: "Curriculum Vitae",
+        desc: "An interactive personal web experience for presenting a professional profile and resume, built with HTML, CSS, and JavaScript.",
       },
     ],
     sectionThree: "03 / Education & certificates",
@@ -392,38 +392,9 @@ export default function Home() {
           </div>
         </article>
 
-        <article className="project-card project-reverse reveal">
-          <a className="project-visual visual-aitopia" href="https://aitopia.ahmedbahathiq.com/" target="_blank" rel="noreferrer" aria-label={`${t.live}: ${t.projects[1].title}`}>
-            <div className="browser-bar"><i /><i /><i /><span>aitopia.ahmedbahathiq.com</span></div>
-            <div className="aitopia-mock">
-              <div className="aitopia-water" />
-              <div className="aitopia-island">
-                <span className="island-zone zone-forest">الغابة</span>
-                <span className="island-zone zone-spring">النبع</span>
-                <span className="island-zone zone-camp">المخيم</span>
-                <i className="agent-dot agent-one">س</i>
-                <i className="agent-dot agent-two">ن</i>
-                <i className="agent-dot agent-three">ر</i>
-              </div>
-              <div className="aitopia-feed"><small>سجل الجزيرة</small><span /><span /><span /></div>
-            </div>
-            <span className="visual-arrow">↗</span>
-          </a>
-          <div className="project-info">
-            <div className="project-kicker"><span>{t.openSourceProject}</span><i /></div>
-            <p>{t.projects[1].tag}</p>
-            <h3>{t.projects[1].title}</h3>
-            <p className="project-desc">{t.projects[1].desc}</p>
-            <div className="tech-row"><span>React</span><span>TypeScript</span><span>Cloudflare</span><span>OpenAI</span></div>
-            <div className="project-actions">
-              <a className="text-link primary-link" href="https://aitopia.ahmedbahathiq.com/" target="_blank" rel="noreferrer">{t.live}<span>↗</span></a>
-              <a className="text-link" href="https://github.com/AhmedBahathiq/aitopia-agent-world" target="_blank" rel="noreferrer">{t.code}<span>↗</span></a>
-            </div>
-          </div>
-        </article>
 
         <article className="project-card reveal">
-          <a className="project-visual visual-lazeez" href="https://ahmedbahathiq.github.io/lazeez-yahamid/" target="_blank" rel="noreferrer" aria-label={`${t.live}: ${t.projects[2].title}`}>
+          <a className="project-visual visual-lazeez" href="https://ahmedbahathiq.github.io/lazeez-yahamid/" target="_blank" rel="noreferrer" aria-label={`${t.live}: ${t.projects[1].title}`}>
             <div className="browser-bar"><i /><i /><i /><span>lazeez-yahamid</span></div>
             <div className="storefront-mock">
               <div className="store-nav"><b>لذيذ يا حامض</b><span>السلة ٢</span></div>
@@ -434,9 +405,9 @@ export default function Home() {
           </a>
           <div className="project-info">
             <div className="project-kicker"><span>{t.liveProject}</span><i /></div>
-            <p>{t.projects[2].tag}</p>
-            <h3>{t.projects[2].title}</h3>
-            <p className="project-desc">{t.projects[2].desc}</p>
+            <p>{t.projects[1].tag}</p>
+            <h3>{t.projects[1].title}</h3>
+            <p className="project-desc">{t.projects[1].desc}</p>
             <div className="tech-row"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>WhatsApp</span></div>
             <div className="project-actions">
               <a className="text-link primary-link" href="https://ahmedbahathiq.github.io/lazeez-yahamid/" target="_blank" rel="noreferrer">{t.live}<span>↗</span></a>
@@ -445,6 +416,27 @@ export default function Home() {
           </div>
         </article>
 
+        <article className="project-card project-reverse reveal">
+          <a className="project-visual visual-cv" href="https://ahmedbahathiq.github.io/cv/" target="_blank" rel="noreferrer" aria-label={`${t.live}: ${t.projects[2].title}`}>
+            <div className="browser-bar"><i /><i /><i /><span>ahmed / cv</span></div>
+            <div className="resume-mock">
+              <div className="resume-side"><div className="mock-avatar">AB</div><b>AHMED<br />BAHATHIQ</b><span /><span /><span /></div>
+              <div className="resume-main"><small>AI ENGINEER</small><strong>EXPERIENCE</strong><i /><i /><i /><strong>SKILLS</strong><div><span>AI</span><span>WEB</span><span>CODE</span></div></div>
+            </div>
+            <span className="visual-arrow">↗</span>
+          </a>
+          <div className="project-info">
+            <div className="project-kicker"><span>{t.liveProject}</span><i /></div>
+            <p>{t.projects[2].tag}</p>
+            <h3>{t.projects[2].title}</h3>
+            <p className="project-desc">{t.projects[2].desc}</p>
+            <div className="tech-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div className="project-actions">
+              <a className="text-link primary-link" href="https://ahmedbahathiq.github.io/cv/" target="_blank" rel="noreferrer">{t.live}<span>↗</span></a>
+              <a className="text-link" href="https://github.com/AhmedBahathiq/cv" target="_blank" rel="noreferrer">{t.code}<span>↗</span></a>
+            </div>
+          </div>
+        </article>
       </section>
 
       <section className="section journey" id="journey">
