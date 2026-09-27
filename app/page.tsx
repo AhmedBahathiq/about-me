@@ -250,7 +250,9 @@ export default function Home() {
 
       <header className="topbar">
         <a className="brand" href="#home" onClick={(event) => navigateToSection(event, "#home")} aria-label={isArabic ? "العودة للرئيسية" : "Back to home"}>
-          <span className="brand-mark">AB</span>
+          <span className="brand-mark">
+            <img className="brand-avatar" src={publicAsset("ahmed-bahathiq.jpeg")} alt="" />
+          </span>
           <span className="brand-copy">
             AHMED
             <small>AI / DEV</small>
@@ -264,6 +266,16 @@ export default function Home() {
         </nav>
 
         <div className="nav-actions">
+          <a
+            className="topbar-shortcut topbar-shortcut--seerati"
+            href="https://seerti.ahmedbahathiq.com/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label={isArabic ? "افتح موقع سيرتي" : "Open Seerati website"}
+            title={isArabic ? "سيرتي" : "Seerati"}
+          >
+            <span aria-hidden="true">س</span>
+          </a>
           <button
             className="language-toggle"
             type="button"
